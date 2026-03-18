@@ -1,3 +1,5 @@
+# EXPT NO.6 - PERFORMANCE ANALYSIS OF THE NETWORK WITH CSMA CD
+
 # AIM
 
 To write an NS2 program to observe the performance of the network with Carrier Sense Multiple Access/Collision Detection.
@@ -8,21 +10,47 @@ PC System with Linux OS, NS2 software.
 
 # ALGORITHM
 STEP 1: Start the program.
+
 STEP 2: Declare the global variables ns for creating a new simulator.
+
 STEP 3: Set the color for packets.
-STEP 4: Open the network animator file in the write mode. STEP 5: Open the trace file and the win file in the write mode. STEP 6: Transfer the packets in network.
+
+STEP 4: Open the network animator file in the write mode.
+
+STEP 5: Open the trace file and the win file in the write mode.
+
+STEP 6: Transfer the packets in network.
+
 STEP 7: Create the capable no. of nodes.
+
 STEP 8: Create the duplex-link between the nodes including the delay time, bandwidth and dropping queue mechanism.
+
 STEP 9: Give the position for the links between the nodes.
-Step 10: Set a TCP connection for source node.
+
+STEP 10: Set a TCP connection for source node.
+
 STEP 11: Set the destination node using TCP sink.
+
 STEP 12: Set the window size and the packet size for the TCP.
-STEP 13: Set up the ftp over the TCP connection.
-STEP 14: Set the UDP and TCP connection for the source and destination. STEP 15: Create the traffic generator CBR for the source and destination files. STEP 16: Define the plot window and finish procedure.
-STEP 17: In the definition of the finish procedure declare the global variables. STEP 18: Close the trace file and namefile and execute the network animation file. STEP 19: At the particular time call the finish procedure.
+
+STEP 13: Set up the FTP over the TCP connection.
+
+STEP 14: Set the UDP and TCP connection for the source and destination.
+
+STEP 15: Create the traffic generator CBR for the source and destination files.
+
+STEP 16: Define the plot window and finish procedure.
+
+STEP 17: In the definition of the finish procedure declare the global variables.
+
+STEP 18: Close the trace file and namefile and execute the network animation file.
+
+STEP 19: At the particular time call the finish procedure.
+
 STEP 20: Stop the program.
  
 # PROGRAM
+```
 
 #Lan simulation – mac.tcl setns [new Simulator] #define color for data flows
 $ns color 1 blue
@@ -79,9 +107,12 @@ $nsat 7.0 "$ftp stop"
 $ns at 7.5 "$cbr stop"
 $ns at 8.0 "finish"
 $ns run
- 
-# OUTPUT
+```
 
+# OUTPUT
+<img width="620" height="325" alt="image" src="https://github.com/user-attachments/assets/29a0e0b3-b174-480c-b1b0-ece7a1409065" />
+
+<img width="593" height="286" alt="image" src="https://github.com/user-attachments/assets/d4dbe2f8-d084-488a-a8d0-7ac79bc0c496" />
 
 
 
